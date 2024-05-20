@@ -1,0 +1,183 @@
+@import url("./global.css");
+@import url('./reset.css');
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 505px 573px 507px 507px 560px 140px;
+    grid-template-areas: "header" "section-1" "section-2" "section-3" "section-4" "foot";
+    justify-items: center;
+    max-width: 1280px;
+}
+@media only screen and (min-width: 608px) {
+    body {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;  
+        flex-wrap: wrap;     
+    }
+    span, .one, .two, .three, #title {
+        display: flex;
+        flex-direction: row;
+        font-size: 2.5rem;
+    }
+    .four {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;  
+        text-wrap: wrap;      
+    }
+    .button1 {
+        width: 205px;
+        height: 44px;
+    }
+    main {
+        gap: 16px;
+    }
+    header {
+        background-image: url('headergde.png');
+    }
+}
+header {
+    background-image: url('../img/header.png');
+    gap: 24px;
+    grid-area: header;
+    text-align: left;
+    padding: 69px 24px 69px 24px;
+    background-size: 100% 100%;
+}
+header #title {
+    font-family: Luckiest Guy;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 69px;
+}
+header #text {
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+header button {
+    width: 381px;
+    border-radius: 28px;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+header .button1 {
+    height: 54px;
+    background-color: #FFFFFF;
+    color: #23272A;
+}
+header .button2 {
+    height: 52px;
+    background-color: #23272A;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+main {
+    font-family: Open Sans;
+    color: #23272A;
+    align-items: center;
+    gap: 27px;
+    text-align: left;
+}
+main .one {
+    padding: 40px 24px 40px 24px;
+    grid-area: section-1;
+}
+main .one #title { 
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 370px;
+    height: 99px;
+    margin-top: 40px;
+}
+main .one #texto { 
+    font-size: 1rem;
+    font-weight: 400;
+    width: 378px;
+    height: 88px;
+}
+main .two {
+    gap: 27px;
+    background: #F6F6F6;
+    padding: 40px 24px 40px 24px;
+    grid-area: section-2;
+}
+main .two #title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 40px 24px 40px 24px;
+}
+main .two #text {
+    width: 378px;
+    height: 88px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+main .three {
+    gap: 27px;
+    padding: 40px 24px 40px 24px;
+    grid-area: section-3;
+}
+main .three img {
+    padding: 40px 24px 40px 24px;
+}
+main .three #title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 40px 24px 40px 24px;
+}
+main .three #text {
+    width: 378px;
+    height: 88px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+main .four {
+    gap: 27px;
+    background: #F6F6F6;
+    align-items: center;
+    justify-content: center;
+    grid-area: section-4;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;
+    margin: auto;
+}
+main .four #title {
+    width: 376px;
+    height: 64px;
+    font-family: Luckiest Guy;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 40px 0px 40px 0px;
+}
+main .four #text {
+    width: 378px;
+    height: 110px;
+    font-size: 1rem;
+    font-weight: 400;
+    align-items: center;
+    text-align: left;
+}
+main .foot {
+    background: #23272A;
+    align-items: center;
+    grid-area: foot;
+}
+main .foot img {
+    align-items: center;
+    padding: 35px 525px;
+}
