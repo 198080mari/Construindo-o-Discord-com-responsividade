@@ -9,44 +9,6 @@ body {
     justify-items: center;
     max-width: 1280px;
 }
-@media only screen and (max-width: 608px) {
-    body {
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        margin: auto;  
-        flex-wrap: wrap;     
-    }
-    span, .one, .two, .three, #title {
-        display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-        flex-wrap: wrap;    
-    }
-    #title {
-        font-size: 1.5rem;
-        text-align: left;
-    }
-    .four {
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        margin: auto;  
-        text-wrap: wrap;      
-    }
-    .button {
-        width: 381px;
-        height: 54px;
-    }
-    main {
-        gap: 1.5rem;
-        flex-wrap: wrap;    
-    }
-    header {
-        background-image: url('header.png');
-        text-wrap: wrap;
-    }
-}
 header {
     background-image: url('../img/headergde.png');
     grid-area: header;
@@ -192,4 +154,55 @@ main .foot {
 main .foot img {
     align-items: center;
     padding: 2rem 32.5rem 2rem 32.5rem ;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url('../img/header.png');
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    header #text {
+        text-align: left;
+        max-width: 100%;
+        text-wrap: wrap;
+    }
+    main {
+        gap: 1.5rem;
+        flex-wrap: wrap;    
+    }
+    header .button {
+        justify-content: center;
+    }
+    button {
+        width: 381px;
+        height: 54px;
+    }
+    span, .one, .two, .three, #title {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        flex-wrap: wrap;    
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .four {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;  
+        text-wrap: wrap;      
+        width: 100%;
+    }
+    span .four #title {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
 }
